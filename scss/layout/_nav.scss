@@ -1,0 +1,41 @@
+.navbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: 0.5s ease;
+}
+
+.navbar.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.navbar a {
+  padding: 1rem;
+  margin: 7px;
+  color: black;
+  font-size: 1.2rem;
+  background: $header-color;
+  display: block;
+  border-radius: 3px;
+}
+
+.navbar a:hover {
+  background: $header-color;
+  color: white;
+}
+
+/* Permet de retirer la ligne du milieu et de croiser la ligne 1 et 3  */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
