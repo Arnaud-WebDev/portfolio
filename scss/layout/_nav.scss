@@ -14,20 +14,25 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.navbar a {
+.navbar li {
+  position: relative;
   padding: 1rem;
   margin: 7px;
-  color: black;
   font-size: 1.2rem;
   background: $header-color;
   display: block;
   border-radius: 3px;
+  cursor: none;
+}
+.navbar a {
+  position: relative;
+  cursor: none;
+  color: black;
 }
 
-.navbar a:hover {
-  background: $header-color;
+/* .navbar a:hover {
   color: white;
-}
+} */
 
 /* Permet de retirer la ligne du milieu et de croiser la ligne 1 et 3  */
 .toggle .line1 {
@@ -38,4 +43,13 @@
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (min-width: 900px) {
+  .navbar {
+    clip-path: none;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+  }
 }

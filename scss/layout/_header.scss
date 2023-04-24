@@ -1,8 +1,8 @@
 header {
+  position: relative;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1000;
   width: 100%;
   padding: 20px;
   display: flex;
@@ -22,4 +22,14 @@ header {
   height: 3px;
   margin: 5px;
   background-color: $burger-color;
+}
+
+@media (min-width: 900px) {
+  #menu-icon {
+    display: none;
+  }
+  header {
+    padding: 1px;
+    justify-content: space-around;
+  }
 }
