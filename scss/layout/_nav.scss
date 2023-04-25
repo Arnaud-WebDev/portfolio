@@ -22,17 +22,27 @@
   background: $header-color;
   display: block;
   border-radius: 3px;
-  cursor: none;
 }
 .navbar a {
   position: relative;
-  cursor: none;
-  color: black;
+  color: #f3f2f9;
+  font-family: "Roboto", sans-serif;
+}
+.navbar a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: width 0.35s ease-out;
 }
 
-/* .navbar a:hover {
-  color: white;
-} */
+.navbar a:hover::after {
+  width: 100%;
+}
 
 /* Permet de retirer la ligne du milieu et de croiser la ligne 1 et 3  */
 .toggle .line1 {
