@@ -18,7 +18,7 @@
   position: relative;
   padding: 1rem;
   margin: 7px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background: $header-color;
   display: block;
   border-radius: 3px;
@@ -55,7 +55,7 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .navbar {
     clip-path: none;
     position: relative;
