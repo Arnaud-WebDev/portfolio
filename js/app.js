@@ -25,7 +25,7 @@ let navLinks = document.querySelectorAll(".navbar a")
 /* Prend la position de la souris et la donne au curseur grâce à top et left */
 document.addEventListener("mousemove", (e) => {
   console.log(e)
-  cursor.setAttribute("style", "top:" + (e.clientY - 12.5) + "px; left:" + (e.clientX - 12.5) + "px;")
+  cursor.setAttribute("style", "top:" + (e.clientY - 17.5) + "px; left:" + (e.clientX - 17.5) + "px;")
   cursorDot.setAttribute("style", "top:" + (e.clientY - 2.5) + "px; left:" + (e.clientX - 2.5) + "px;")
 })
 

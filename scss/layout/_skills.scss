@@ -1,0 +1,31 @@
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills__container h1 {
+  font-family: "roboto", sans-serif;
+  margin-top: 60px;
+  font-size: 2rem;
+  text-align: center;
+}
+.skills__container-frontend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills__box {
+  width: 120px;
+  height: 150px;
+  border-radius: 20%;
+  background: rgb(202, 201, 201);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg__html {
+  width: 100px;
+  height: 100px;
+  background: url(../images/svg/html5.svg) center center / 60% 80% no-repeat;
+}
