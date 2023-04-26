@@ -20,11 +20,10 @@ window.addEventListener("scroll", () => {
 /* Selection du curseur */
 const cursor = document.querySelector(".cursor")
 const cursorDot = document.querySelector(".cursor-dot")
-let navLinks = document.querySelectorAll(".navbar a")
+let navLinks = document.querySelectorAll(".navbar a, a, img")
 
 /* Prend la position de la souris et la donne au curseur grâce à top et left */
 document.addEventListener("mousemove", (e) => {
-  console.log(e)
   cursor.setAttribute("style", "top:" + (e.clientY - 17.5) + "px; left:" + (e.clientX - 17.5) + "px;")
   cursorDot.setAttribute("style", "top:" + (e.clientY - 2.5) + "px; left:" + (e.clientX - 2.5) + "px;")
 })

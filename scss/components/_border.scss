@@ -3,3 +3,8 @@
   width: 50%;
   border-bottom: 1px solid black;
 }
+@media (min-width: 1024px) {
+  .border__section {
+    margin-top: 0;
+  }
+}

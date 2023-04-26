@@ -1,0 +1,11 @@
+.btn-cv {
+  padding: 10px 22px;
+  background: #01a29c;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.btn-cv:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
