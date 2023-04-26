@@ -1,5 +1,7 @@
 .cursor {
   position: fixed;
+  left: 0;
+  top: 0;
   border-radius: 50%;
   pointer-events: none;
   border: 2px solid black;
@@ -12,11 +14,13 @@
 }
 .cursor-dot {
   position: fixed;
+  left: 0;
+  top: 0;
   border-radius: 50%;
   pointer-events: none;
   width: 5px;
   height: 5px;
-  background: black;
+  background: white;
   transition: all 0.3s ease;
   transition-property: background, transform; /* Permet de retirer le lag de la souris */
   z-index: 1;
@@ -30,12 +34,12 @@
 }
 /* Fait disparaitre le point au passage de la souris sur les liens */
 .dot-white {
-  display: none;
+  opacity: 0;
 }
-/* Les liens passent en blanc au passage de la souris */
-/* .hovered-link {
-  color: black !important;
-} */
+.cursor-vanish {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
 
 /* Agrandi le curseur au click de la souris */
 .expand {

@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
 /* Selection du curseur */
 const cursor = document.querySelector(".cursor")
 const cursorDot = document.querySelector(".cursor-dot")
-let navLinks = document.querySelectorAll(".navbar a, a, img")
+let navLinks = document.querySelectorAll(".navbar a, a, img, .skills__box, p")
 
 /* Prend la position de la souris et la donne au curseur grâce à top et left */
 document.addEventListener("mousemove", (e) => {
@@ -50,4 +50,14 @@ navLinks.forEach((link) => {
     cursorDot.classList.remove("dot-white")
     link.classList.remove("hovered-link")
   })
+})
+
+/* Fait disparaître le curseur quand la souris n'est plus au dessus de la fenêtre */
+window.addEventListener("mouseout", () => {
+  cursor.classList.add("cursor-vanish")
+  cursorDot.classList.add("cursor-vanish")
+})
+window.addEventListener("mouseover", () => {
+  cursor.classList.remove("cursor-vanish")
+  cursorDot.classList.remove("cursor-vanish")
 })
