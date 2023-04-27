@@ -36,6 +36,7 @@
 .dot-white {
   opacity: 0;
 }
+/* Fait disparaitre le curseur quand il n'est plus au dessus de la fenêtre */
 .cursor-vanish {
   opacity: 0;
   transition: all 0.3s ease;

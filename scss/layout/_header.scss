@@ -1,4 +1,4 @@
-header {
+.header {
   position: fixed;
   width: 100%;
   top: 0;
@@ -9,6 +9,7 @@ header {
   align-items: center;
   flex-direction: row-reverse;
   background: $header-color;
+  transition: top 2s, opacity 2s;
 }
 
 #menu-icon {
@@ -22,12 +23,16 @@ header {
   margin: 5px;
   background-color: $burger-color;
 }
+.hidden {
+  top: -80px;
+  opacity: 0;
+}
 
 @media (min-width: 1024px) {
   #menu-icon {
     display: none;
   }
-  header {
+  .header {
     padding: 1px;
     justify-content: space-around;
   }

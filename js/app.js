@@ -61,3 +61,18 @@ window.addEventListener("mouseover", () => {
   cursor.classList.remove("cursor-vanish")
   cursorDot.classList.remove("cursor-vanish")
 })
+
+/* Retire le menu en scrollant vers le bas et le fait réaparaître en scrollant vers le haut */
+let header = document.querySelector(".header")
+console.log(header)
+let lastScrollValue = 0
+
+document.addEventListener("scroll", () => {
+  let top = document.documentElement.scrollTop
+  if (lastScrollValue < top) {
+    header.classList.add("hidden")
+  } else {
+    header.classList.remove("hidden")
+  }
+  lastScrollValue = top
+})
