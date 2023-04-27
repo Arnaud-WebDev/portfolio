@@ -1,102 +1,97 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-.cursor {
-  position: fixed;
-  left: 0;
-  top: 0;
-  border-radius: 50%;
-  pointer-events: none;
-  border: 2px solid black;
-  height: 35px;
-  width: 35px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition-property: background, -webkit-transform;
-  transition-property: background, -webkit-transform;
-  transition-property: background, transform;
-  transition-property: background, transform, -webkit-transform;
-  /* Permet de retirer le lag de la souris */
-  z-index: 1;
-  -webkit-backdrop-filter: invert(100%);
-          backdrop-filter: invert(100%);
-}
-
-.cursor-dot {
-  position: fixed;
-  left: 0;
-  top: 0;
-  border-radius: 50%;
-  pointer-events: none;
-  width: 5px;
-  height: 5px;
-  background: white;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transition-property: background, -webkit-transform;
-  transition-property: background, -webkit-transform;
-  transition-property: background, transform;
-  transition-property: background, transform, -webkit-transform;
-  /* Permet de retirer le lag de la souris */
-  z-index: 1;
-  -webkit-backdrop-filter: invert(100%);
-          backdrop-filter: invert(100%);
-}
-
-/* Fais grossir le curseur au passage de la souris sur les liens grâce au JS */
-.link-grow {
-  -webkit-transform: scale(1.6);
-          transform: scale(1.6);
-  -webkit-backdrop-filter: invert(100%);
-          backdrop-filter: invert(100%);
-  /* hue-rotate(190deg) */
-  border: none;
-}
-
-/* Fait disparaitre le point au passage de la souris sur les liens */
-.dot-white {
-  opacity: 0;
-}
-
-/* Fait disparaitre le curseur quand il n'est plus au dessus de la fenêtre */
-.cursor-vanish {
-  opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-/* Agrandi le curseur au click de la souris */
-.expand {
-  -webkit-animation: Anim 0.2s;
-          animation: Anim 0.2s;
-}
-
-@-webkit-keyframes Anim {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+@media (min-width: 1024px) {
+  .cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    border: 2px solid black;
+    height: 35px;
+    width: 35px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transition-property: background, -webkit-transform;
+    transition-property: background, -webkit-transform;
+    transition-property: background, transform;
+    transition-property: background, transform, -webkit-transform;
+    /* Permet de retirer le lag de la souris */
+    z-index: 1;
+    -webkit-backdrop-filter: invert(100%);
+            backdrop-filter: invert(100%);
   }
-  50% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+  .cursor-dot {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    width: 5px;
+    height: 5px;
+    background: white;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transition-property: background, -webkit-transform;
+    transition-property: background, -webkit-transform;
+    transition-property: background, transform;
+    transition-property: background, transform, -webkit-transform;
+    /* Permet de retirer le lag de la souris */
+    z-index: 1;
+    -webkit-backdrop-filter: invert(100%);
+            backdrop-filter: invert(100%);
   }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  /* Fais grossir le curseur au passage de la souris sur les liens grâce au JS */
+  .link-grow {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    -webkit-backdrop-filter: invert(100%);
+            backdrop-filter: invert(100%);
+    /* hue-rotate(190deg) */
+    border: none;
   }
-}
-
-@keyframes Anim {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  /* Fait disparaitre le point au passage de la souris sur les liens */
+  .dot-white {
+    opacity: 0;
   }
-  50% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+  /* Fait disparaitre le curseur quand il n'est plus au dessus de la fenêtre */
+  .cursor-vanish {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  /* Agrandi le curseur au click de la souris */
+  .expand {
+    -webkit-animation: Anim 0.2s;
+            animation: Anim 0.2s;
+  }
+  @-webkit-keyframes Anim {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes Anim {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
   }
 }
 
