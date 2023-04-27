@@ -121,18 +121,6 @@
           transform: rotate(-5deg) scale(1.1);
 }
 
-/* Colors */
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  scroll-behavior: smooth;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Merriweather", sans-serif;
-}
-
 body::-webkit-scrollbar {
   width: 0.7rem;
 }
@@ -144,6 +132,18 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #0d77a9;
   border-radius: 6px;
+}
+
+/* Colors */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Merriweather", sans-serif;
 }
 
 .header {
@@ -166,8 +166,8 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   background: #2c3e50;
-  -webkit-transition: top 2s, opacity 2s;
-  transition: top 2s, opacity 2s;
+  -webkit-transition: top 1s, opacity 1s;
+  transition: top 1s, opacity 1s;
 }
 
 #menu-icon {
@@ -494,7 +494,7 @@ section {
 }
 
 .svg__js {
-  width: 100px;
+  width: 80px;
   height: 100px;
   background: url(../images/svg/js.svg) center center/60% 80% no-repeat;
 }

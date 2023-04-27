@@ -7,14 +7,3 @@
   box-sizing: border-box;
   font-family: "Merriweather", sans-serif;
 }
-
-body::-webkit-scrollbar {
-  width: 0.7rem;
-}
-body::-webkit-scrollbar-track {
-  background: #2c3e50;
-}
-body::-webkit-scrollbar-thumb {
-  background: #0d77a9;
-  border-radius: 6px;
-}
