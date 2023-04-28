@@ -1,6 +1,5 @@
 .about__container {
   width: 100%;
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,6 +42,9 @@
 }
 
 @media (min-width: 1024px) {
+  .about__container {
+    min-height: 80vh;
+  }
   .about__container-content {
     flex-direction: row;
   }
