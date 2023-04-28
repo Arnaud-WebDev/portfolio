@@ -1,11 +1,27 @@
 .btn-cv {
+  text-align: center;
+  max-width: 70%;
   padding: 10px 22px;
   background: #01a29c;
   color: white;
   border-radius: 10px;
   transition: all 0.2s;
+  margin: 20px;
+}
+.container__btn-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .btn-cv:hover {
   transform: rotate(-5deg) scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  .container__btn-contact {
+    flex-direction: row;
+    justify-content: center;
+  }
 }

@@ -108,17 +108,46 @@
 }
 
 .btn-cv {
+  text-align: center;
+  max-width: 70%;
   padding: 10px 22px;
   background: #01a29c;
   color: white;
   border-radius: 10px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  margin: 20px;
+}
+
+.container__btn-contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .btn-cv:hover {
   -webkit-transform: rotate(-5deg) scale(1.1);
           transform: rotate(-5deg) scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  .container__btn-contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 body::-webkit-scrollbar {
