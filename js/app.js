@@ -1,7 +1,7 @@
 /* Message dans la console */
 console.log("%c Hello ! 👋", "color: black;" + " background: #32ffce;" + " font-weight: bold;" + "font-size: 14px;" + "border-radius: 10px;" + "font-style: italic;" + "padding: 3px;")
 console.log(
-  "%c Welcome, my little sneaky developer 😉",
+  "%c And welcome, my little sneaky developer 😉",
   "color: black;" + " background: #32ffce;" + " font-weight: bold;" + "font-size: 14px;" + "border-radius: 10px;" + "font-style: italic;" + "padding: 3px;"
 )
 
@@ -67,7 +67,6 @@ window.addEventListener("mouseover", () => {
 
 /* Retire le menu en scrollant vers le bas et le fait réaparaître en scrollant vers le haut */
 let header = document.querySelector(".header")
-console.log(header)
 let lastScrollValue = 0
 
 document.addEventListener("scroll", () => {
@@ -78,4 +77,30 @@ document.addEventListener("scroll", () => {
     header.classList.remove("hidden")
   }
   lastScrollValue = top
+})
+
+/* Bouton pour remonter en haut de la page */
+
+let buttonScrollUp = document.querySelector(".btn-scrollup")
+
+buttonScrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  })
+})
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
+    buttonScrollUp.style.transition = "all 0.5s ease-in-out"
+    buttonScrollUp.style.opacity = 1
+    buttonScrollUp.style.visibility = "visible"
+  } else {
+    buttonScrollUp.style.opacity = 0
+    buttonScrollUp.style.visibility = "hidden"
+  }
+})
+window.addEventListener("load", () => {
+  buttonScrollUp.style.opacity = 0
 })
