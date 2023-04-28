@@ -1,4 +1,4 @@
-section {
+.section {
   width: 90%;
   min-height: 100vh;
   display: flex;
@@ -6,15 +6,8 @@ section {
   flex-direction: column;
 }
 
-/* .projets {
-  background: blue;
-}
-.contact {
-  background: green;
-} */
-
 @media (min-width: 1024px) {
-  section {
+  .section {
     width: 80%;
   }
 }

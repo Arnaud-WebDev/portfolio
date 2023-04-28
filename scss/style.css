@@ -97,6 +97,7 @@
 
 .border__section {
   margin-top: 30px;
+  margin-bottom: 30px;
   width: 50%;
   border-bottom: 1px solid black;
 }
@@ -316,7 +317,7 @@ main {
           box-shadow: 0px 0px 15px black;
 }
 
-section {
+.section {
   width: 90%;
   min-height: 100vh;
   display: -webkit-box;
@@ -331,14 +332,8 @@ section {
           flex-direction: column;
 }
 
-/* .projets {
-  background: blue;
-}
-.contact {
-  background: green;
-} */
 @media (min-width: 1024px) {
-  section {
+  .section {
     width: 80%;
   }
 }
@@ -425,85 +420,148 @@ section {
   }
 }
 
-.skills__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/* .skills__container {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
 }
-
 .skills__container h1 {
   font-family: "roboto", sans-serif;
   margin-top: 80px;
   font-size: 2rem;
   text-align: center;
 }
-
 .skills__container-frontend {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
 }
-
 .skills__box {
   text-align: center;
 }
-
 .skills__box-content {
   width: 80px;
   height: 110px;
   border-radius: 10px;
-  background: #cac9c9;
+  background: rgb(202, 201, 201);
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.svg__html {
+  width: 100px;
+  height: 100px;
+  background: url(../images/svg/html5.svg) center center / 60% 80% no-repeat;
+}
+.svg__css {
+  width: 100px;
+  height: 100px;
+  background: url(../images/svg/css3.svg) center center / 60% 80% no-repeat;
+}
+.svg__js {
+  width: 80px;
+  height: 100px;
+  background: url(../images/svg/js.svg) center center / 60% 80% no-repeat;
+}
+ */
+.skills__container {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*  background: #1c2834; */
 }
 
-.svg__html {
-  width: 100px;
-  height: 100px;
-  background: url(../images/svg/html5.svg) center center/60% 80% no-repeat;
+.skills__container h1 {
+  margin: 30px;
 }
 
-.svg__css {
-  width: 100px;
-  height: 100px;
-  background: url(../images/svg/css3.svg) center center/60% 80% no-repeat;
+.skills__container-frontend {
+  width: 90%;
 }
 
-.svg__js {
-  width: 80px;
-  height: 100px;
-  background: url(../images/svg/js.svg) center center/60% 80% no-repeat;
+.skills-box {
+  position: relative;
+  background: #2c3e50;
+  border: 1px solid #2c3e50;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 3.4rem;
+  margin: 10px;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.svg__html:hover,
-.svg__css:hover,
-.svg__js:hover {
-  -webkit-animation: bounce-skills 0.6s infinite;
-          animation: bounce-skills 0.6s infinite;
+.skills-box h3 {
+  position: absolute;
+  left: 48px;
+  top: 19px;
+}
+
+.svg-html {
+  width: 40px;
+  height: 40px;
+  background: url(/images/svg/html5.svg) left center/60% 80% no-repeat;
+}
+
+.svg-css3 {
+  width: 40px;
+  height: 40px;
+  background: url(/images/svg/css3.svg) left center/60% 80% no-repeat;
+}
+
+.svg-js {
+  width: 40px;
+  height: 40px;
+  background: url(/images/svg/js.svg) left center/60% 80% no-repeat;
+}
+
+.percent-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #01a29c;
+  height: 0.34rem;
+  border-radius: 10px;
+}
+
+.html-bar {
+  width: 80%;
+}
+
+.css3-bar {
+  width: 75%;
+}
+
+.js-bar {
+  width: 50%;
+}
+
+.skills-box:hover .svg-html,
+.skills-box:hover .svg-css3,
+.skills-box:hover .svg-js {
+  -webkit-animation: bounce-skills 0.6s;
+          animation: bounce-skills 0.6s;
 }
 
 @-webkit-keyframes bounce-skills {

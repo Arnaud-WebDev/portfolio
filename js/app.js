@@ -1,6 +1,9 @@
 /* Message dans la console */
-console.log("%c Hello !", "color: black;" + " background: #32ffce;" + " font-weight: bold;" + "font-size: 12px;" + "border-radius: 10px;" + "font-style: italic;")
-console.log("%c Welcome, my little sneaky developer ;)", "color: black;" + " background: #32ffce;" + " font-weight: bold;" + "font-size: 12px;" + "border-radius: 10px;" + "font-style: italic;")
+console.log("%c Hello ! 👋", "color: black;" + " background: #32ffce;" + " font-weight: bold;" + "font-size: 14px;" + "border-radius: 10px;" + "font-style: italic;" + "padding: 3px;")
+console.log(
+  "%c Welcome, my little sneaky developer 😉",
+  "color: black;" + " background: #32ffce;" + " font-weight: bold;" + "font-size: 14px;" + "border-radius: 10px;" + "font-style: italic;" + "padding: 3px;"
+)
 
 let menu = document.querySelector("#menu-icon")
 let navbar = document.querySelector(".navbar")
@@ -20,7 +23,7 @@ window.addEventListener("scroll", () => {
 /* Selection du curseur */
 const cursor = document.querySelector(".cursor")
 const cursorDot = document.querySelector(".cursor-dot")
-let navLinks = document.querySelectorAll(".navbar a, a, img, .skills__box, p")
+let navLinks = document.querySelectorAll(".navbar a, a, img, .skills-box, p")
 
 /* Prend la position de la souris et la donne au curseur grâce à top et left */
 document.addEventListener("mousemove", (e) => {
