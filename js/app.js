@@ -106,7 +106,7 @@ window.addEventListener("load", () => {
 /* Bouton pour remonter en haut de la page */
 
 /* SWIPPER */
-let swiperProjects = new Swiper(".projects__container", {
+let swiperProjects = new Swiper(".projets__container", {
   loop: true,
   spaceBetween: 24,
 

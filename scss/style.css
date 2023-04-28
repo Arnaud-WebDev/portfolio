@@ -107,6 +107,11 @@
     margin-bottom: 0;
     width: 70%;
   }
+  .border__section-projets {
+    width: 70%;
+    border-bottom: 1px solid black;
+    margin-top: 30px;
+  }
 }
 
 .btn-cv {
@@ -443,11 +448,10 @@ main {
   margin-bottom: 3rem;
 }
 
-.section__border {
+/* .section__border {
   border-bottom: 1px solid black;
   padding-bottom: 3.5rem;
-}
-
+} */
 @media (min-width: 1024px) {
   .section {
     width: 80%;
