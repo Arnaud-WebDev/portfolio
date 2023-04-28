@@ -1,12 +1,14 @@
 .projets__container {
-  overflow: initial;
+  overflow: hidden;
 }
 .projets__content {
   display: grid;
   justify-content: center;
 }
 .projets__img {
-  width: 250px;
+  width: 200px;
+  border: 1px solid black;
+  justify-self: center;
   border-radius: 0.75rem;
   margin-bottom: 1.25rem;
 }
@@ -17,4 +19,78 @@
   font-size: 1.2rem;
   margin-bottom: 1.25rem;
   margin: 0.5rem 0 1.25rem;
+}
+
+/********** SWIPER  *******/
+.svg-chevron-right {
+  width: 28px;
+  height: 38px;
+  background: url(../images/svg/chevron-right-solid.svg) center no-repeat;
+}
+.svg-chevron-left {
+  width: 28px;
+  height: 38px;
+  background: url(../images/svg/chevron-left-solid.svg) center no-repeat;
+}
+
+/* Fait disparaitre les bouton de base grâce au content */
+.projets__container .swiper-button-prev::after,
+.projets__container .swiper-button-next::after {
+  content: "";
+}
+.projets__container .swiper-button-prev,
+.projets__container .swiper-button-next {
+  width: initial;
+  height: initial;
+  margin: initial;
+  font-size: 2.5rem;
+}
+.projets__container .swiper-button-prev {
+  left: 23rem;
+  top: 1.5rem;
+}
+.projets__container .swiper-button-next {
+  right: 23rem;
+  top: 1.5rem;
+}
+.projets__container .swiper-slide {
+  margin-bottom: 4.5rem;
+}
+.projets__container .swiper-pagination-bullets {
+  bottom: 0;
+}
+
+@media (min-width: 550px) {
+  .projets__container .swiper-button-prev {
+    left: 18rem;
+    top: 1.5rem;
+  }
+  .projets__container .swiper-button-next {
+    right: 18rem;
+    top: 1.5rem;
+  }
+  .svg-chevron-right {
+    width: 40px;
+    height: 50px;
+  }
+  .svg-chevron-left {
+    width: 40px;
+    height: 50px;
+  }
+  .projets__img {
+    width: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .projets__img {
+    width: 300px;
+  }
+  .projets__container .swiper-button-prev {
+    left: 12rem;
+    top: 3.8rem;
+  }
+  .projets__container .swiper-button-next {
+    right: 12rem;
+    top: 3.8rem;
+  }
 }
