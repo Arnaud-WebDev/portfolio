@@ -92,7 +92,7 @@ buttonScrollUp.addEventListener("click", () => {
 })
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 500) {
+  if (window.scrollY > 400) {
     buttonScrollUp.style.transition = "all 0.5s ease-in-out"
     buttonScrollUp.style.opacity = 1
     buttonScrollUp.style.visibility = "visible"
