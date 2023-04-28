@@ -80,7 +80,6 @@ document.addEventListener("scroll", () => {
 })
 
 /* Bouton pour remonter en haut de la page */
-
 let buttonScrollUp = document.querySelector(".btn-scrollup")
 
 buttonScrollUp.addEventListener("click", () => {
@@ -104,3 +103,4 @@ window.addEventListener("scroll", () => {
 window.addEventListener("load", () => {
   buttonScrollUp.style.opacity = 0
 })
+/* Bouton pour remonter en haut de la page */
