@@ -536,7 +536,10 @@ main {
 
 .skills__box:hover .svg-html,
 .skills__box:hover .svg-css3,
-.skills__box:hover .svg-js {
+.skills__box:hover .svg-js,
+.skills__box-tools:hover .svg__git,
+.skills__box-tools:hover .svg__sass,
+.skills__box-tools:hover .svg__vsCode {
   -webkit-animation: bounce-skills 0.6s;
           animation: bounce-skills 0.6s;
 }
@@ -645,10 +648,8 @@ main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    row-gap: 10px;
-  }
-  .skills__container-frontend {
-    width: 40%;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

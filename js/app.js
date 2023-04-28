@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
 /* Selection du curseur */
 const cursor = document.querySelector(".cursor")
 const cursorDot = document.querySelector(".cursor-dot")
-let navLinks = document.querySelectorAll(".navbar a, a, img, .skills-box, p")
+let navLinks = document.querySelectorAll(".navbar a, a, img, .skills__box, .skills__box-tools, p")
 
 /* Prend la position de la souris et la donne au curseur grâce à top et left */
 document.addEventListener("mousemove", (e) => {
