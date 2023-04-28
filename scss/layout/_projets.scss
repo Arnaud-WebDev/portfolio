@@ -1,0 +1,20 @@
+.projets__container {
+  overflow: initial;
+}
+.projets__content {
+  display: grid;
+  justify-content: center;
+}
+.projets__img {
+  width: 250px;
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.projets__subtitle {
+  font-size: 0.9rem;
+}
+.projets__title {
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+  margin: 0.5rem 0 1.25rem;
+}

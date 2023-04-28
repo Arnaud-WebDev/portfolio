@@ -1,4 +1,8 @@
 .projects__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  column-gap: 0.5rem;
+}
+.projects__button:hover .projets__arrow {
+  transform: translateX(0.25rem);
 }

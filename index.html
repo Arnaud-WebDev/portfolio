@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== SWIPER JS  ================-->
+    <link rel="stylesheet" href="./scss/swiper-bundle.css">
+
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="icon" href="./images/portfolio.png">
     <title>Portfolio</title>
@@ -127,18 +130,46 @@
 
             <div class="border__section"></div>
 
-            <section class="projets section" id="projets">
+            <section class="projets section__projets" id="projets">
                 <h2 class="section__title">Projets</h2>
                 <span class="section__subtitle">Projets récents</span>
+
                 <div class="container section__border">
-                    <div class="projects__conta">
-                        <div>
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
+
                             <!-- PROJET 1 -->
-                            <div class="projets__content">
-                                <!--  <img src="./images/projet-reservia.png" alt="Projet réservia"> -->
+                            <div class="projets__content swiper-slide">
+                                <img src="./images/projet-reservia.png" alt="Projet réservia" class="projets__img">
                                 <div>
-                                    <span class="projets__subtitle"></span>
-                                    <h1 class="projets__title"></h1>
+                                    <span class="projets__subtitle">Reservia</span>
+                                    <h1 class="projets__title">Site de réservation d'hotels</h1>
+
+                                    <a href="#" class="projects__button">
+                                        Voir le site <div class="projets__arrow"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- PROJET 2 -->
+                            <div class="projets__content swiper-slide">
+                                <img src="./images/projet-reservia.png" alt="Projet réservia" class="projets__img">
+                                <div>
+                                    <span class="projets__subtitle">Reservia</span>
+                                    <h1 class="projets__title">Site de réservation d'hotels</h1>
+
+                                    <a href="#" class="projects__button">
+                                        Voir le site <div class="projets__arrow"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- PROJET 3 -->
+                            <div class="projets__content swiper-slide">
+                                <img src="./images/projet-reservia.png" alt="Projet réservia" class="projets__img">
+                                <div>
+                                    <span class="projets__subtitle">Réservia</span>
+                                    <h1 class="projets__title">Site de réservation d'hotels</h1>
 
                                     <a href="#" class="projects__button">
                                         Voir le site <div class="projets__arrow"></div>
@@ -146,6 +177,13 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!--====== Swipper arrow =======-->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <!-- Swiper pagination  -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -158,6 +196,9 @@
 
 
 
+
+    <!--=========== SWIPER JS ============-->
+    <script src="./js/swiper-bundle.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

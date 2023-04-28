@@ -4,7 +4,24 @@
   align-items: center;
   flex-direction: column;
 }
-
+.section__projets {
+  padding-block: 2.5rem;
+}
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+.section__title {
+  margin-bottom: 0.25rem;
+}
+.section__subtitle {
+  display: block;
+  margin-bottom: 3rem;
+}
+.section__border {
+  border-bottom: 1px solid black;
+  padding-bottom: 3.5rem;
+}
 @media (min-width: 1024px) {
   .section {
     width: 80%;

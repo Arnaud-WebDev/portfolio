@@ -16,7 +16,7 @@
     transition-property: background, transform;
     transition-property: background, transform, -webkit-transform;
     /* Permet de retirer le lag de la souris */
-    z-index: 1;
+    z-index: 3;
     -webkit-backdrop-filter: invert(100%);
             backdrop-filter: invert(100%);
   }
@@ -36,7 +36,7 @@
     transition-property: background, transform;
     transition-property: background, transform, -webkit-transform;
     /* Permet de retirer le lag de la souris */
-    z-index: 1;
+    z-index: 3;
     -webkit-backdrop-filter: invert(100%);
             backdrop-filter: invert(100%);
   }
@@ -190,15 +190,26 @@ body::-webkit-scrollbar-thumb {
   width: 30px;
   height: 17px;
   background: url(../images/svg/arrow-right-solid.svg) center no-repeat;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .projects__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.projects__button:hover .projets__arrow {
+  -webkit-transform: translateX(0.25rem);
+          transform: translateX(0.25rem);
 }
 
 /* Colors */
@@ -211,6 +222,16 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Merriweather", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
 }
 
 .header {
@@ -365,6 +386,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .main__container {
@@ -401,6 +423,29 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.section__projets {
+  padding-block: 2.5rem;
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.section__title {
+  margin-bottom: 0.25rem;
+}
+
+.section__subtitle {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.section__border {
+  border-bottom: 1px solid black;
+  padding-bottom: 3.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -739,5 +784,33 @@ main {
   .skills__container-tools {
     row-gap: 50px;
   }
+}
+
+.projets__container {
+  overflow: initial;
+}
+
+.projets__content {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projets__img {
+  width: 250px;
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.projets__subtitle {
+  font-size: 0.9rem;
+}
+
+.projets__title {
+  font-size: 1.2rem;
+  margin-bottom: 1.25rem;
+  margin: 0.5rem 0 1.25rem;
 }
 /*# sourceMappingURL=style.css.map */
