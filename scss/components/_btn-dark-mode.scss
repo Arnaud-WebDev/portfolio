@@ -26,6 +26,9 @@ body.dark {
   background: #0d1017;
   transition: 1s ease;
 }
+body.light {
+  transition: 1s ease;
+}
 body.dark .border__section {
   border-bottom: 1px solid white;
 }

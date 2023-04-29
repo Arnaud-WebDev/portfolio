@@ -32,16 +32,28 @@
   width: 80%;
 }
 .about__container-img {
-  width: 100%;
+  position: relative;
+  width: 450px;
+  height: 300px;
   display: flex;
   justify-content: center;
 }
-.about__container-img img {
-  width: 50%;
-  border-radius: 10%;
-}
 
+.about__container-img img {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 10%;
+  transition: opacity 2s ease-in-out;
+}
+.about__container-img img.top:hover {
+  opacity: 0;
+}
 @media (min-width: 1024px) {
+  .about__container-img {
+    width: 850px;
+    height: 350px;
+  }
   .about__container {
     min-height: 80vh;
   }

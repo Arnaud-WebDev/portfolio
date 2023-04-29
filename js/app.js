@@ -151,3 +151,16 @@ btnToggle.addEventListener("click", () => {
     body.classList.remove("light")
   }
 })
+
+/************* Changement de la photo au passage de la souris *****************/
+/* const image = document.getElementById("img") */
+//Affecte la nouvelle image lorsque la souris survole l'élément
+/* function passageDeLaSouris(element) {
+  element.setAttribute("src", "./images/moi-peinture2.png")
+  element.style.transitionTimingFunction = "2s "
+} */
+//Affecte l'image de départ lorsque la souris ne survole plus l'élément
+/* function departDeLaSouris(element) {
+  element.setAttribute("src", "./images/moi-peinture.png")
+}
+ */
