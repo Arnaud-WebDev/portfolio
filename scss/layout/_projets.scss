@@ -1,3 +1,9 @@
+.projets {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .projets__container {
   overflow: hidden;
 }
@@ -92,5 +98,23 @@
   .projets__container .swiper-button-next {
     right: 12rem;
     top: 3.8rem;
+  }
+}
+@media (min-width: 1500px) {
+  .projets__img {
+    width: 330px;
+  }
+  .projets__container .swiper-button-prev {
+    left: 0;
+    top: 3.8rem;
+  }
+  .projets__container .swiper-button-next {
+    right: 0;
+    top: 3.8rem;
+  }
+  .swiper-pagination-bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
   }
 }

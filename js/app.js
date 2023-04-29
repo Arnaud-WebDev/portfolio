@@ -107,8 +107,9 @@ window.addEventListener("load", () => {
 
 /* SWIPPER */
 let swiperProjects = new Swiper(".projets__container", {
+  slidesPerView: 1,
   loop: true,
-  spaceBetween: 24,
+  spaceBetween: 10,
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -118,9 +119,13 @@ let swiperProjects = new Swiper(".projets__container", {
     el: ".swiper-pagination",
   },
   breakpoints: {
-    1200: {
+    1024: {
       slidesPerView: 1,
-      spaceBetween: -56,
+      spaceBetween: 0,
+    },
+    1500: {
+      slidesPerView: 2,
+      spaceBetween: 0,
     },
   },
 })
