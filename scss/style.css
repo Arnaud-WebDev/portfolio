@@ -292,6 +292,10 @@ body.dark .swiper-pagination-bullet {
   background: white;
 }
 
+body.dark .projects__button {
+  color: #ddff1c;
+}
+
 /* Colors */
 * {
   margin: 0;
@@ -914,6 +918,11 @@ main {
   font-size: 1.2rem;
   margin-bottom: 1.25rem;
   margin: 0.5rem 0 1.25rem;
+}
+
+.projects__button {
+  color: #0e55c0;
+  font-weight: bold;
 }
 
 /********** SWIPER  *******/
