@@ -1052,4 +1052,8 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.footer li {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
