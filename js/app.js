@@ -119,6 +119,10 @@ let swiperProjects = new Swiper(".projets__container", {
     el: ".swiper-pagination",
   },
   breakpoints: {
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
     1024: {
       slidesPerView: 1,
       spaceBetween: 0,

@@ -881,6 +881,18 @@ main {
   bottom: 0;
 }
 
+/*********************** MEDIA QUERIES  *********************/
+@media (min-width: 360px) {
+  .projets__container .swiper-button-prev {
+    left: 22rem;
+    top: 1.5rem;
+  }
+  .projets__container .swiper-button-next {
+    right: 22rem;
+    top: 1.5rem;
+  }
+}
+
 @media (min-width: 550px) {
   .projets__container .swiper-button-prev {
     left: 18rem;
