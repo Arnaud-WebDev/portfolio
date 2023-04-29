@@ -23,7 +23,7 @@ window.addEventListener("scroll", () => {
 /* Selection du curseur */
 const cursor = document.querySelector(".cursor")
 const cursorDot = document.querySelector(".cursor-dot")
-let navLinks = document.querySelectorAll(".navbar a, a, img, .skills__box, .skills__box-tools, p, span, h1")
+let navLinks = document.querySelectorAll(".navbar a, a, img, .skills__box, .skills__box-tools, p, span, h1, .btn-toggle, .swiper-button-prev, .swiper-button-next")
 
 /* Prend la position de la souris et la donne au curseur grâce à top et left */
 document.addEventListener("mousemove", (e) => {
@@ -132,4 +132,22 @@ let swiperProjects = new Swiper(".projets__container", {
       spaceBetween: 0,
     },
   },
+})
+
+/****************** DARK MODE ***************/
+
+const btnToggle = document.querySelector(".btn-toggle")
+const btnSun = document.querySelector(".svg__sun")
+const btnMoon = document.querySelector(".svg__moon")
+
+btnToggle.addEventListener("click", () => {
+  const body = document.body
+
+  if (body.classList.contains("dark")) {
+    body.classList.add("light")
+    body.classList.remove("dark")
+  } else if (body.classList.contains("light")) {
+    body.classList.add("dark")
+    body.classList.remove("light")
+  }
 })
