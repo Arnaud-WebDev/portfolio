@@ -927,6 +927,7 @@ main {
 .projets__img img {
   width: 100%;
   height: 100%;
+  border-radius: 0.75rem;
 }
 
 .projets__subtitle {
