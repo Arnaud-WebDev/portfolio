@@ -1046,7 +1046,8 @@ main {
 
 @media (min-width: 1500px) {
   .projets__img {
-    width: 330px;
+    width: 328px;
+    height: 166px;
   }
   .projets__container .swiper-button-prev {
     left: 0;
