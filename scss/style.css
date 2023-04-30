@@ -917,6 +917,7 @@ main {
 
 .projets__img {
   width: 200px;
+  height: 104px;
   border: 1px solid black;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1024,6 +1025,7 @@ main {
   }
   .projets__img {
     width: 250px;
+    height: 154px;
   }
   .projets__subtitle {
     width: 250px;
