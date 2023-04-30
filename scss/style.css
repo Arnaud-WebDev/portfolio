@@ -229,20 +229,20 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-align: center;
           align-items: center;
   left: 20px;
-  width: 60px;
-  height: 40px;
+  width: 50px;
+  height: 30px;
   cursor: pointer;
 }
 
 .svg__sun {
-  width: 40%;
+  width: 100%;
   height: 100%;
   background: url(../images/svg/sun-solid.svg) center no-repeat;
 }
 
 .svg__moon {
   display: none;
-  width: 40%;
+  width: 100%;
   height: 100%;
   background: url(../images/svg/moon-solid.svg) center no-repeat;
 }
@@ -298,6 +298,15 @@ body.dark .swiper-pagination-bullet {
 
 body.dark .projects__button {
   color: #ddff1c;
+}
+
+@media (min-width: 1024px) {
+  .btn-toggle {
+    left: initial;
+    right: 100px;
+    width: 55px;
+    height: 35px;
+  }
 }
 
 /* Colors */
@@ -1061,5 +1070,6 @@ main {
 
 .footer li {
   color: white;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
