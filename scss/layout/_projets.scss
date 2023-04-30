@@ -19,6 +19,9 @@
   margin-bottom: 1.25rem;
 }
 .projets__subtitle {
+  display: inline-block;
+  width: 200px;
+  word-wrap: break-word;
   font-size: 0.9rem;
 }
 .projets__title {
@@ -98,6 +101,9 @@
     height: 50px;
   }
   .projets__img {
+    width: 250px;
+  }
+  .projets__subtitle {
     width: 250px;
   }
 }
