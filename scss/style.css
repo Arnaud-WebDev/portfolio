@@ -1009,11 +1009,11 @@ main {
 @media (min-width: 550px) {
   .projets__container .swiper-button-prev {
     left: 18rem;
-    top: 1.5rem;
+    top: 3rem;
   }
   .projets__container .swiper-button-next {
     right: 18rem;
-    top: 1.5rem;
+    top: 3rem;
   }
   .svg-chevron-right {
     width: 40px;
