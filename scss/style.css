@@ -599,8 +599,8 @@ main {
 
 .about__container-img {
   position: relative;
-  width: 450px;
-  height: 250px;
+  width: 500px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
