@@ -978,12 +978,12 @@ main {
 
 .projets__container .swiper-button-prev {
   left: 23rem;
-  top: 1.5rem;
+  top: 2rem;
 }
 
 .projets__container .swiper-button-next {
   right: 23rem;
-  top: 1.5rem;
+  top: 2rem;
 }
 
 .projets__container .swiper-slide {
@@ -998,11 +998,9 @@ main {
 @media (min-width: 360px) {
   .projets__container .swiper-button-prev {
     left: 22rem;
-    top: 1.5rem;
   }
   .projets__container .swiper-button-next {
     right: 22rem;
-    top: 1.5rem;
   }
 }
 
@@ -1039,11 +1037,11 @@ main {
   }
   .projets__container .swiper-button-prev {
     left: 12rem;
-    top: 3.8rem;
+    top: 3.4rem;
   }
   .projets__container .swiper-button-next {
     right: 12rem;
-    top: 3.8rem;
+    top: 3.4rem;
   }
 }
 
