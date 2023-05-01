@@ -660,6 +660,8 @@ main {
   width: 40px;
   height: 40px;
   background: url(../images/svg/github.svg) center no-repeat;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .svg__mail {
@@ -1008,12 +1010,16 @@ main {
   width: 28px;
   height: 38px;
   background: url(../images/svg/chevron-right-solid.svg) center no-repeat;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .svg-chevron-left {
   width: 28px;
   height: 38px;
   background: url(../images/svg/chevron-left-solid.svg) center no-repeat;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 /* Fait disparaitre les bouton de base grâce au content */

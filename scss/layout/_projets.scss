@@ -44,11 +44,13 @@
   width: 28px;
   height: 38px;
   background: url(../images/svg/chevron-right-solid.svg) center no-repeat;
+  transition: 1s ease;
 }
 .svg-chevron-left {
   width: 28px;
   height: 38px;
   background: url(../images/svg/chevron-left-solid.svg) center no-repeat;
+  transition: 1s ease;
 }
 
 /* Fait disparaitre les bouton de base grâce au content */
