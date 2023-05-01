@@ -275,6 +275,18 @@ body.dark .svg__sun {
   display: none;
 }
 
+body.dark .svg__mail {
+  background: url(../images/svg/mail-white.svg) center no-repeat;
+}
+
+body.dark .svg__github {
+  background: url(../images/svg/github-white.svg) center no-repeat;
+}
+
+body.dark .svg__linkedin {
+  background: url(../images/svg/linkedin-white.svg) center no-repeat;
+}
+
 body.dark .svg-chevron-left {
   background: url(../images/svg/chevron-left-solid-white.svg) center no-repeat;
 }
@@ -623,6 +635,53 @@ main {
   opacity: 0;
 }
 
+.contact__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__container p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.contact-content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.svg__github {
+  width: 40px;
+  height: 40px;
+  background: url(../images/svg/github.svg) center no-repeat;
+}
+
+.svg__mail {
+  width: 40px;
+  height: 40px;
+  background: url(../images/svg/mail.svg) center no-repeat;
+}
+
+.svg__linkedin {
+  width: 40px;
+  height: 40px;
+  background: url(../images/svg/linkedin.svg) center no-repeat;
+}
+
 @media (min-width: 1024px) {
   .about__container-img {
     width: 550px;
@@ -638,6 +697,9 @@ main {
             flex-direction: row;
     -webkit-column-gap: 20px;
             column-gap: 20px;
+  }
+  .contact-content {
+    width: 30%;
   }
 }
 

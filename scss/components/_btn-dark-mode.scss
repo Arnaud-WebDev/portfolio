@@ -41,6 +41,15 @@ body.dark .svg__moon {
 body.dark .svg__sun {
   display: none;
 }
+body.dark .svg__mail {
+  background: url(../images/svg/mail-white.svg) center no-repeat;
+}
+body.dark .svg__github {
+  background: url(../images/svg/github-white.svg) center no-repeat;
+}
+body.dark .svg__linkedin {
+  background: url(../images/svg/linkedin-white.svg) center no-repeat;
+}
 body.dark .svg-chevron-left {
   background: url(../images/svg/chevron-left-solid-white.svg) center no-repeat;
 }

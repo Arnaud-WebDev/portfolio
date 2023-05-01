@@ -50,7 +50,36 @@
 .about__container-img img.top:hover {
   opacity: 0;
 }
-
+.contact__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__container p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.contact-content {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.svg__github {
+  width: 40px;
+  height: 40px;
+  background: url(../images/svg/github.svg) center no-repeat;
+}
+.svg__mail {
+  width: 40px;
+  height: 40px;
+  background: url(../images/svg/mail.svg) center no-repeat;
+}
+.svg__linkedin {
+  width: 40px;
+  height: 40px;
+  background: url(../images/svg/linkedin.svg) center no-repeat;
+}
 @media (min-width: 1024px) {
   .about__container-img {
     width: 550px;
@@ -62,5 +91,8 @@
   .about__container-content {
     flex-direction: row;
     column-gap: 20px;
+  }
+  .contact-content {
+    width: 30%;
   }
 }
