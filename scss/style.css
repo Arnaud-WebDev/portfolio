@@ -289,10 +289,8 @@ body.dark .svg-chevron-right {
 
 body.dark .projets__arrow {
   background: url(../images/svg/arrow-right-solid-white.svg) center no-repeat;
-}
-
-body.dark .projets__arrow {
-  background: url(../images/svg/arrow-right-solid-white.svg) center no-repeat;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 body.dark .swiper-pagination-bullet {
@@ -1003,6 +1001,8 @@ main {
 .projects__button {
   color: #0e55c0;
   font-weight: bold;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 /********** SWIPER  *******/
