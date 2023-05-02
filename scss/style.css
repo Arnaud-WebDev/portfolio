@@ -568,9 +568,9 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -672,6 +672,10 @@ main {
   width: 40px;
   height: 40px;
   background: url(../images/svg/linkedin.svg) center no-repeat;
+}
+
+.animated-text {
+  visibility: hidden;
 }
 
 @media (min-width: 1024px) {
