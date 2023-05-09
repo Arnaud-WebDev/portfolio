@@ -152,7 +152,7 @@ btnToggle.addEventListener("click", () => {
 
 /***************** ANIMATED TEXT ********************/
 
-window.addEventListener("DOMContentLoaded", (e) => {
+/* window.addEventListener("DOMContentLoaded", (e) => {
   animate_text()
 })
 
@@ -176,3 +176,4 @@ function animate_text() {
     delay_start += delay * letters.length
   })
 }
+ */
